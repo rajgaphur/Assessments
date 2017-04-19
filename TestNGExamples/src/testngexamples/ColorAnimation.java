@@ -18,7 +18,7 @@ public class ColorAnimation {
 	  @BeforeClass
 	  public void setUp() throws InterruptedException {
 			 
-		  System.setProperty("webdriver.chrome.driver", "Utils\\chromedriver.exe"); //Amended the driver path
+		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\m1022011\\Desktop\\Selenium\\drivers\\chromedriver_win32\\chromedriver.exe"); //Amended the driver path
 		  driver = new ChromeDriver();
 		  
 		  driver.manage().window().maximize();
@@ -58,7 +58,10 @@ public class ColorAnimation {
 		  
 	  }
 	  
-	  
+	  @AfterClass
+	  public void closeBrowser(){
+		  driver.close();
+	  }
 	  
 		
 	
