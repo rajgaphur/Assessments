@@ -21,7 +21,7 @@ public class AjaxExample {
 	
 	@BeforeClass
 	public void setUp(){
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "Utils\\chromedriver.exe"); //Amended the driver path
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-extensions");
 		driver = new ChromeDriver(options );

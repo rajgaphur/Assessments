@@ -17,7 +17,7 @@ public class TestAutocomplete {
 	  @BeforeClass
 	  public void setUp() throws InterruptedException {
 			 
-		  System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", "Utils\\chromedriver.exe"); //Amended the driver path
 		  driver = new ChromeDriver();
 		  
 		  driver.manage().window().maximize();

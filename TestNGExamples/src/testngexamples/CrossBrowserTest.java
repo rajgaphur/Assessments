@@ -26,7 +26,7 @@ public class CrossBrowserTest {
 	public void openBrowser(String browser) throws InterruptedException{
 		
 		if(browser.equalsIgnoreCase("Chrome")){
-			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "Utils\\chromedriver.exe"); //Amended the driver path
 			driver = new ChromeDriver();
 			
 		}else if(browser.equalsIgnoreCase("Firefox")){
