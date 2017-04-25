@@ -26,6 +26,7 @@ public class AjaxExample {
 		options.addArguments("--disable-extensions");
 		driver = new ChromeDriver(options );
 		
+		//Added a comment on April 25th
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to("http://demo.guru99.com/selenium/ajax.html");

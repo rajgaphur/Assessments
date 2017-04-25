@@ -23,9 +23,9 @@ public class ColorAnimation {
 		  
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  
+		  Thread.sleep(10000);
 		  driver.get("https://jqueryui.com/widget/");
-		 // Thread.sleep(5000);
+		 
 		    	  
 	  }
 	  @Test
